@@ -86,6 +86,16 @@ def _trim_to_one_page(resume_data: dict, template_name: str) -> dict:
     return data
 
 
+def _ensure_active_template(template_name: str = "resume_template.html") -> None:
+    """If the active template doesn't exist, copy the default so PDF generation never fails."""
+    active = os.path.join(TEMPLATE_DIR, template_name)
+    if not os.path.exists(active):
+        default = os.path.join(TEMPLATE_DIR, "resume_template_default.html")
+        if os.path.exists(default):
+            import shutil
+            shutil.copy(default, active)
+
+
 def generate_pdf(resume_data: dict, template_name: str = "resume_template.html") -> str:
     """Render tailored resume data into a one-page PDF.
 
@@ -99,6 +109,7 @@ def generate_pdf(resume_data: dict, template_name: str = "resume_template.html")
         Path to the generated PDF file.
     """
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    _ensure_active_template(template_name)
 
     # Trim content to fit one page
     trimmed_data = _trim_to_one_page(resume_data, template_name)

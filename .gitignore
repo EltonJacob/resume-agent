@@ -10,6 +10,9 @@ eldonya-*.json
 # Generated output
 generated_resumes/
 
+# Active template is user-specific — not committed. resume_template_default.html ships with the repo.
+resume_template.html
+
 # System / editor
 __pycache__/
 *.pyc
