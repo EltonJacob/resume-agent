@@ -1,0 +1,17 @@
+# Personal data — never commit these
+profile.json
+data/
+*.pdf
+eldonya-*.json
+
+# Secrets
+.env
+
+# Generated output
+generated_resumes/
+
+# System / editor
+__pycache__/
+*.pyc
+.DS_Store
+.cursor/

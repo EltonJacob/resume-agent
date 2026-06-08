@@ -1,0 +1,141 @@
+{
+  "personal_info": {
+    "name": "Alex Rivera",
+    "email": "alex.rivera@email.com",
+    "phone": "555-123-4567",
+    "location": "Austin, TX",
+    "linkedin": "https://www.linkedin.com/in/alex-rivera/",
+    "github": "https://github.com/alexrivera",
+    "website": "https://alexrivera.dev"
+  },
+  "summary": "",
+  "professional_experience": [
+    {
+      "company": "Stripe",
+      "role": "Software Engineer",
+      "location": "San Francisco, California",
+      "start_date": "July 2022",
+      "end_date": "Present",
+      "bullet_points": [
+        "Built and maintained payment processing microservices handling 50,000+ transactions per day using Go and gRPC, reducing average latency by 40%",
+        "Redesigned fraud detection pipeline using Python and scikit-learn, improving precision by 22% and reducing false positives that blocked legitimate payments",
+        "Led migration of legacy monolith billing service to Kubernetes-managed microservices on GCP, cutting infrastructure costs by 35%",
+        "Implemented distributed tracing with OpenTelemetry across 8 services, reducing mean time to diagnose production incidents from 45 minutes to under 10 minutes",
+        "Collaborated with product and design teams in Agile sprints to deliver a self-serve tax reporting feature used by 12,000+ merchants within 3 months of launch"
+      ]
+    },
+    {
+      "company": "Stripe",
+      "role": "Software Engineer Intern",
+      "location": "San Francisco, California",
+      "start_date": "May 2021",
+      "end_date": "August 2021",
+      "bullet_points": [
+        "Developed an internal dashboard using React and TypeScript to visualize payment dispute trends, replacing a manual spreadsheet process used by the operations team",
+        "Wrote integration tests in Go that caught 3 regressions before they reached production, integrated into the CI/CD pipeline via GitHub Actions"
+      ]
+    },
+    {
+      "company": "University of Texas at Austin — IT Services",
+      "role": "Student Developer",
+      "location": "Austin, Texas",
+      "start_date": "September 2019",
+      "end_date": "May 2021",
+      "bullet_points": [
+        "Built a Python ETL pipeline to migrate 80,000+ student records from a legacy Oracle system to a new PostgreSQL database with zero data loss",
+        "Created automated weekly reports using SQL and pandas, saving the IT team 6 hours of manual work per week",
+        "Maintained and extended a PHP/Laravel internal ticketing system used by 200+ university staff"
+      ]
+    }
+  ],
+  "non_professional_experience": [
+    {
+      "organization": "Code for Austin",
+      "role": "Open Source Contributor",
+      "start_date": "January 2023",
+      "end_date": "Present",
+      "bullet_points": [
+        "Contributed to a civic tech platform that helps residents track local government spending, adding a filterable budget visualization built with D3.js and React",
+        "Mentored 3 junior contributors through their first open source pull requests during monthly hack nights"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "DevPulse — Developer Productivity Dashboard",
+      "combined_name": "",
+      "description": "A full-stack web app that aggregates GitHub, Jira, and Slack activity into a single productivity dashboard for engineering teams",
+      "technologies": ["Python", "FastAPI", "React", "TypeScript", "PostgreSQL", "Redis", "Docker", "GitHub API", "Jira API"],
+      "bullet_points": [
+        "Built a FastAPI backend with async endpoints that poll the GitHub, Jira, and Slack APIs on a configurable schedule and normalize events into a unified activity schema stored in PostgreSQL",
+        "Designed a React + TypeScript dashboard with filterable charts (Recharts) showing commit frequency, PR cycle time, and ticket throughput per engineer over rolling 30/60/90-day windows",
+        "Added Redis caching for API responses to keep dashboard load time under 200ms even with 10+ integrations active, reducing third-party API calls by 70%"
+      ],
+      "url": "https://github.com/alexrivera/devpulse"
+    },
+    {
+      "name": "SmartReceipt — OCR Expense Tracker",
+      "combined_name": "",
+      "description": "A mobile-friendly web app that extracts structured data from receipt photos using OCR and automatically categorizes expenses",
+      "technologies": ["Python", "FastAPI", "Tesseract OCR", "OpenAI GPT-4o", "React", "SQLite", "AWS S3", "Pillow"],
+      "bullet_points": [
+        "Built a receipt parsing pipeline using Tesseract OCR and GPT-4o that extracts merchant, date, line items, and totals from uploaded images with 91% field-level accuracy across 500 test receipts",
+        "Implemented image preprocessing with Pillow (deskew, contrast enhancement, binarization) that improved OCR accuracy by 28% on low-quality phone photos",
+        "Created a React expense dashboard with category breakdowns, monthly trend charts, and CSV export — deployed on AWS with S3 for image storage and a FastAPI backend on EC2"
+      ],
+      "url": "https://github.com/alexrivera/smartreceipt"
+    },
+    {
+      "name": "TaskFlow — LLM-Powered Project Planner",
+      "combined_name": "",
+      "description": "An AI assistant that breaks down a project description into a structured task plan, estimates effort, and assigns tasks to team members based on their skill profiles",
+      "technologies": ["Python", "Anthropic Claude API", "Streamlit", "SQLite", "pandas"],
+      "bullet_points": [
+        "Built a Claude-powered agent that takes a plain-text project description and generates a structured task breakdown with effort estimates, dependencies, and skill requirements using tool use",
+        "Implemented a simple team skill registry (SQLite) and a matching algorithm that assigns tasks to team members based on skill overlap and current workload",
+        "Deployed as a Streamlit app with exportable Markdown and CSV task plans — used by 3 student project teams to organize their senior capstone projects"
+      ],
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Texas at Austin",
+      "degree": "Bachelor of Science in Computer Science",
+      "location": "Austin, Texas, USA",
+      "graduation_date": "May 2022",
+      "gpa": "3.7/4.0",
+      "honors": ["Dean's List (4 semesters)"],
+      "relevant_coursework": [
+        "Data Structures and Algorithms",
+        "Operating Systems",
+        "Database Systems",
+        "Software Engineering",
+        "Machine Learning",
+        "Computer Networks"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer – Associate",
+      "issuer": "Amazon Web Services",
+      "date": "March 2023",
+      "credential_id": "AWS-DEV-EXAMPLE-12345"
+    },
+    {
+      "name": "Professional Scrum Master I (PSM I)",
+      "issuer": "Scrum.org",
+      "date": "November 2022",
+      "credential_id": "PSM-EXAMPLE-67890"
+    }
+  ],
+  "skills": {
+    "Languages": ["Python", "Go", "JavaScript", "TypeScript", "SQL", "PHP", "Java"],
+    "Frameworks & Libraries": ["React", "FastAPI", "Flask", "Laravel", "pandas", "scikit-learn", "Recharts", "D3.js"],
+    "Databases": ["PostgreSQL", "MySQL", "SQLite", "Redis", "Oracle"],
+    "Cloud & DevOps": ["AWS (EC2, S3, RDS)", "GCP", "Docker", "Kubernetes", "GitHub Actions", "CI/CD Pipelines", "Terraform"],
+    "ML & AI": ["scikit-learn", "OpenAI GPT-4", "Anthropic Claude API", "Tesseract OCR", "Regression", "Classification", "Feature Engineering"],
+    "Tools & Practices": ["Git", "gRPC", "OpenTelemetry", "Postman", "Agile/Scrum", "REST APIs", "Microservices", "Test-Driven Development"]
+  }
+}
